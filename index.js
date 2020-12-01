@@ -23,7 +23,20 @@ const parentList = [
 ]
 
 function getParent(list, children){
-  return
+
+  let parent
+
+  list.forEach(element => {
+    if(element.children === children){
+       parent = element.name
+    }
+  });
+
+  return parent
+
+   
+
+
 }
 
 const parent = getParent(parentList, 'Pedro')
